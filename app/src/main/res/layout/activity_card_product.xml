@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CardProductActivity">
+    <ImageView
+        android:id="@+id/ProductPhoto"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/ProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dead by Daylight"
+        android:textSize="30sp"
+        android:textColor="@color/purple"
+        app:layout_constraintTop_toBottomOf="@id/ProductPhoto"
+        app:layout_constraintLeft_toLeftOf="@id/ProductPhoto"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/ProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Цена: 500"
+        android:textColor="@color/purple"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/ProductName"
+        app:layout_constraintLeft_toLeftOf="@id/ProductName"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/ProductDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dead by Daylight, это ужаснейшая игра, в ней нет баланса, новый маньяк - Канеки кен, абсолютно несбалансированный, играть на сурвах невозможно, на большинстве маньяков играть невозможно, игра говно!"
+        android:textSize="20sp"
+        android:textColor="@color/purple"
+        app:layout_constraintTop_toBottomOf="@id/ProductPrice"
+        app:layout_constraintLeft_toLeftOf="@id/ProductPhoto"/>
+
+    <Button
+        android:id="@+id/AddToBasketBtn"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="Добавить в корзину"
+        android:textSize="30sp"
+        android:backgroundTint="#0D0606"
+        android:textColor="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="17dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
