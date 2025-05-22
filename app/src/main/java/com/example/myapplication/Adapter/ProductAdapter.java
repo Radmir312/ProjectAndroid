@@ -38,10 +38,10 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Product product = productList.get(position);
         holder.imageProduct.setImageResource(product.getImageProduct());
-        holder.titleProduct.setText(product.getTitle());
-        holder.priceProduct.setText(Double.toString(product.getPrice()));
-        holder.countProduct.setText(Integer.toString(product.getCount()));
-        holder.infProduct.setText(product.getDescription());
+        holder.titleProduct.setText("Название: \n" + product.getTitle());
+        holder.priceProduct.setText("Цена: \n" + product.getPrice() + " ₽");
+        holder.countProduct.setText("Количество:\n" + Integer.toString(product.getCount()));
+        holder.infProduct.setText("Описание:\n" + product.getDescription());
 
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(v.getContext(), CardProductActivity.class);

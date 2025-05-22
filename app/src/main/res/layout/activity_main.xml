@@ -12,6 +12,7 @@
     <TextView
         android:id="@+id/titleTextView"
         android:text="Авторизация"
+        android:fontFamily="@font/ndastroneer"
         android:textSize="20sp"
         android:layout_height="wrap_content"
         android:layout_width="200dp"
